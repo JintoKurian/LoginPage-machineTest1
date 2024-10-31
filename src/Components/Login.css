@@ -1,0 +1,299 @@
+.loginContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.imageSection {
+    flex: 1;
+    background-color: #f0f0f0;
+}
+
+.imageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loginMain {
+    flex: 1;
+    max-width: 400px;
+    margin: 20px auto; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logoText {
+    font-size: 24px;
+    color: #6940FF;
+    font-weight: bold;
+}
+
+.welcomeText {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm label {
+    font-size: 14px;
+    color: #252525;
+    margin-bottom: 5px;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    background: rgb(225, 223, 223);
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.passwordInput {
+    position: relative;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.forgotPassword {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgotPassword:hover {
+    text-decoration: underline;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.loginButton:hover {
+    background-color: #0056b3;
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0; 
+}
+
+.googleButton {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #3b3b3b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.googleIcon {
+    width: 20px;  
+    height: 20px; 
+    transform: scale(1.8); 
+    transform-origin: center; 
+}
+
+
+.signupText {
+    text-align: center;  
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+.signupText a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signupText a:hover {
+    text-decoration: underline;
+}
+
+
+
+.container{
+ 
+    width: 170px;
+    height: 50px;
+    /* background-color: #f1eaff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container p{
+    margin-left: 20px;
+    margin-top: -3px;
+}
+.button{
+    width: 50px;
+    height: 23px;
+    background-color: #f0f0f0;
+    
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    border: 0.5px solid #E5E5E5
+}
+
+.button::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 200px;
+    margin: 1.5px;
+    transition: 0.2s;
+}
+
+input:checked + .button{
+    background-color: #6940FF;
+}
+input:checked + .button::before{
+    transform: translateX(25px);
+}
+
+.container input{
+    display: none;
+}
+
+
+
+
+
+/* Footer styles */
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 100px;
+}
+
+.userImages {
+    display: flex;
+    
+}
+
+.userImage {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: -8px; 
+    border: 2px solid #fff; 
+}
+
+.userText {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.copyrightText {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap; 
+}
+
+
+.HeadingMiddle{
+    display: none;
+}
+
+
+
+
+
+/* Medea query */
+
+
+@media only screen and (max-width: 600px) {
+    .imageSection{
+        display: none;
+    }
+.heading{
+    display: none;
+}
+    .HeadingMiddle {
+        text-align: center;
+        margin-left: 130px;
+        margin-top: 30px;
+        margin-bottom: -20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+  }
